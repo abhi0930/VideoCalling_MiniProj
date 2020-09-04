@@ -198,7 +198,7 @@ public class Profile extends AppCompatActivity {
                                                 @Override
                                                 public void onComplete(@NonNull Task<Void> task) {
                                                     currentuserlog="Friends";
-                                                    addfrnd.setText("Remove Friend");
+                                                    addfrnd.setText("Remove Contact");
                                                     decline_frnd.setVisibility(View.INVISIBLE);
 
                                                 }
