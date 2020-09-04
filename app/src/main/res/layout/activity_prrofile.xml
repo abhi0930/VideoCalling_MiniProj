@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <ImageView
+        android:id="@+id/profile_page_image"
+        android:layout_width="241dp"
+        android:layout_height="230dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginRight="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/man">
+
+
+    </ImageView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="320dp"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        android:layout_marginRight="26dp"
+        android:layout_marginLeft="26dp"
+        app:cardCornerRadius="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/profile_page_username"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="UserName"
+                android:textSize="28dp"
+                android:textColor="#3994DC"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="12dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/profile_page_status"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:textSize="20dp"
+                android:text="Status"
+                android:paddingLeft="12dp">
+
+            </TextView>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+       <Button
+        android:id="@+id/add_frnd_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_card_view"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginRight="110dp"
+        android:background="@drawable/accept_button"
+        android:fontFamily="sans-serif"
+        android:text="Add Friend"
+        android:textAllCaps="false"
+        android:textColor="#FFFF"
+        android:textStyle="bold">
+
+
+    </Button>
+
+    <Button
+        android:id="@+id/cancel_frnd_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_card_view"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="110dp"
+        android:background="@drawable/decline_button"
+        android:fontFamily="sans-serif"
+        android:text="Cancel Friend"
+        android:textAllCaps="false"
+        android:textColor="#FFFF"
+        android:textStyle="bold"
+        android:visibility="invisible">
+
+
+    </Button>
+
+
+</RelativeLayout>
