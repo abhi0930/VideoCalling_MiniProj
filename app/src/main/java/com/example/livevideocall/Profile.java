@@ -140,8 +140,8 @@ public class Profile extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(Profile.this,error.getMessage(),Toast.LENGTH_SHORT);
-                Log.d(errorTAG,"OnDataChange "+error.getMessage());
+                Toast.makeText(Profile.this,error.getMessage(),Toast.LENGTH_SHORT).show();
+                Log.d(errorTAG,"DataChanged "+error.getMessage());
 
             }
         });
