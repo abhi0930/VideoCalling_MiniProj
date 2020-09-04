@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1042215018847",
+    "firebase_url": "https://videocall-f213c.firebaseio.com",
+    "project_id": "videocall-f213c",
+    "storage_bucket": "videocall-f213c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042215018847:android:be6dba851eb279ec28d6ea",
+        "android_client_info": {
+          "package_name": "com.example.livevideocall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042215018847-gi59ggrsbc4gtfq97g6i2h94tkf7ke6e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.livevideocall",
+            "certificate_hash": "856495be37c0faeec27808c936d125bf05b7339a"
+          }
+        },
+        {
+          "client_id": "1042215018847-46nion0slvul4bjaria639rm5o54bgq9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWD_X-4xQfdOxcWFyf7wuSVeziBCUOx6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042215018847-46nion0slvul4bjaria639rm5o54bgq9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
