@@ -16,7 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.example.lve_videocallchat.R;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -140,8 +140,8 @@ public class Profile extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(Profile.this,error.getMessage(),Toast.LENGTH_SHORT).show();
-                Log.d(errorTAG,"DataChanged "+error.getMessage());
+                Toast.makeText(Profile.this,error.getMessage(),Toast.LENGTH_SHORT);
+                Log.d(errorTAG,"OnDataChange "+error.getMessage());
 
             }
         });
@@ -163,16 +163,39 @@ public class Profile extends AppCompatActivity {
                    if (currentuserlog.equals("request_recieved")) {
                        acceptrequest();
                    }
-                   if (currentuserlog.equals("request_sent")) 
+                   if (currentuserlog.equals("request_sent"))
                    {
                        cancelrequest();
 
+                   }
+                   if(currentuserlog.equals("Friends"))
+                   {
+                       removeFriend();
                    }
                }
 
            });
        }
        }
+
+    private void removeFriend() {
+        contactsref.child(senderid).child(recieverid).child("Contacts").removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if (task.isSuccessful())
+                {
+                    contactsref.child(recieverid).child(senderid).child("Contacts").removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            currentuserlog="new";
+                            addfrnd.setText("Add Friend");
+                        }
+                    });
+                }
+
+            }
+        });
+    }
 
 
     private void acceptrequest()
@@ -198,7 +221,7 @@ public class Profile extends AppCompatActivity {
                                                 @Override
                                                 public void onComplete(@NonNull Task<Void> task) {
                                                     currentuserlog="Friends";
-                                                    addfrnd.setText("Remove Contact");
+                                                    addfrnd.setText("Remove Friend");
                                                     decline_frnd.setVisibility(View.INVISIBLE);
 
                                                 }

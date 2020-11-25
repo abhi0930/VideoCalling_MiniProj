@@ -19,7 +19,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.lve_videocallchat.R;
+
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
@@ -132,7 +132,7 @@ public class FindFriends extends AppCompatActivity {
             contact_pic=itemView.findViewById(R.id.contact_pic);
             contact_view=itemView.findViewById(R.id.contact_view);
             add=itemView.findViewById(R.id.add_frnd_btn);
-            add.setVisibility(View.INVISIBLE);
+            //add.setVisibility(View.INVISIBLE);
 
 
 
