@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:elevation="20dp"
+    android:orientation="vertical"
+    android:layout_marginTop="18dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    app:cardCornerRadius="12dp">
+
+    <RelativeLayout
+        android:id="@+id/saved_contact_view"
+        android:layout_width="match_parent"
+        android:layout_height="95dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/saved_contact_pic"
+            android:layout_width="60dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerHorizontal="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_picc">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/saved_contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingLeft="70dp"
+            android:text="UserName"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24dp">
+
+
+        </TextView>
+
+
+        <Button
+            android:id="@+id/video_call_btn"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_below="@id/saved_contact_name"
+            android:layout_marginLeft="122dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="96dp"
+            android:background="@drawable/accept_button"
+            android:fontFamily="sans-serif"
+            android:text="Call"
+            android:drawablePadding="-48dp"
+            android:drawableLeft="@drawable/ic_videocam_black_24dp"
+            android:paddingLeft="24dp"
+            android:textAllCaps="false"
+            android:textColor="#FFFF"
+            android:textStyle="bold">
+
+
+        </Button>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appbar_layout"
+        android:id="@+id/appbar_layout_notification"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#D6191919">
@@ -18,20 +18,18 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <EditText
-                    android:id="@+id/search"
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_search_black_24dp"
-                    android:drawablePadding="4dp"
-                    android:drawableTint="#FFFF"
-                    android:layout_centerVertical="true"
-                    android:hint="Search"
+                    android:text="Notifications"
+                    android:textSize="24dp"
                     android:textColor="#FFFF"
-                    android:textColorHint="#FFFF">
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:layout_centerVertical="true">
 
 
-                </EditText>
+                </TextView>
             </RelativeLayout>
 
 
@@ -42,13 +40,11 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/search_result_list"
+        android:id="@+id/notification_list"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_below="@id/appbar_layout">
-
-
-
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbar_layout_notification"
+        >
 
     </androidx.recyclerview.widget.RecyclerView>
 </RelativeLayout>

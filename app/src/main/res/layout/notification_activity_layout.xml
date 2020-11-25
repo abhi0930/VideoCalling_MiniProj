@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="20dp"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="28dp"
+    android:layout_marginLeft="28dp"
+    app:cardCornerRadius="12dp">
+    
+    <RelativeLayout
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/search_profile_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_picc"
+            android:paddingLeft="2dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="70dp"
+            android:text="UserName"
+            android:fontFamily="sans-serif-condensed"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24dp"
+            android:gravity="start">
+
+
+        </TextView>
+
+        <Button
+            android:id="@+id/accept_frnd_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_below="@id/username"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="70dp"
+            android:text="Accept"
+            android:textColor="#FFFF"
+            android:textAllCaps="false"
+            android:background="@drawable/accept_button">
+
+        </Button>
+
+        <Button
+            android:id="@+id/cancel_frnd_btn"
+            android:layout_width="98dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/username"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="70dp"
+            android:text="Decline"
+            android:textColor="#FFFF"
+            android:textAllCaps="false"
+            android:background="@drawable/decline_button"
+            >
+
+        </Button>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
